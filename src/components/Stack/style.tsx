@@ -14,6 +14,7 @@ export const StackCard = styled("div", {
   alignItems: "center",
   justifyContent: "center",
   position: "relative",
+  width: "35px",
 
   [`& ${Text}`]: {
     opacity: 0,
@@ -27,7 +28,7 @@ export const StackCard = styled("div", {
     fontSize: "1rem",
     fontWeight: "500",
     whiteSpace: "nowrap",
-    color: "$blackFixed",
+    color: "black",
 
     "&:before": {
       content: "",

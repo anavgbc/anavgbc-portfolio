@@ -8,11 +8,6 @@ interface GlobalStyleProps {
 export const Container = styled("div", {
   maxWidth: "$container",
   margin: "0 auto",
-  padding: "0 1rem",
-
-  "@tablet": {
-    maxWidth: "$containerTablet",
-  },
 });
 
 export const Flex = styled("div", {
@@ -73,6 +68,7 @@ export const globalStyles = globalCss({
     padding: 0,
     fontFamily: "'Inter', sans-serif",
     boxSizing: "border-box",
+    zIndex: "99",
   },
   html: {
     scrollBehavior: "smooth",
@@ -81,7 +77,6 @@ export const globalStyles = globalCss({
 });
 
 export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
-
   const theme = createTheme({
     colors: {
       brand1: "#623CEA",

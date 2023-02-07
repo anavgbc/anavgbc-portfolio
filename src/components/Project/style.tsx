@@ -43,6 +43,9 @@ export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
   marginTop: "4rem",
+  backgroundColor: "#ffffffe",
+  backdropFilter: "blur(2px)",
+
   [`&:first-child`]: {
     [`& ${ProjectTitle}:first-child`]: {
       position: "relative",
@@ -53,7 +56,7 @@ export const Project = styled("article", {
       },
 
       "&::before": {
-        content: 'New',
+        content: "New",
         position: "absolute",
         top: "5px",
         right: "-4rem",
